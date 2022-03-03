@@ -13,6 +13,7 @@ import plotly.express as px
 from dash.dependencies import Input,Output
 import plotly.graph_objects as go
 from PIL import Image
+import sys
 
 
 df = pd.read_csv("Ranking_CB_Responses.csv", delimiter=',', header="infer")
@@ -196,4 +197,4 @@ def update_result(a,b):
     
     
 if __name__ == '__main__':
-    app.run_server(debug=True,port=80)
+    app.run_server(debug=True,port=sys.argv[1])
