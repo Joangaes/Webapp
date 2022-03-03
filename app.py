@@ -134,7 +134,6 @@ external_stylesheets = [
 app= dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
-from app import index
 
 app.title= "Digital currency webapp"
 app.layout=html.Div([html.H1(children="Digital currency web-app", className="header-title"),
